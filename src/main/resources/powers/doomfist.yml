@@ -1,12 +1,11 @@
 Doomfist:
   colouredName: "&8&lDoomfist"
   description: "You are Doomfist."
-  heroInfo: "
-              &7&lDoomfist&r can dash forward and use his abilitys by left clicking&r\n
-              &7&l[Details]:&r\n
-              This class has two skills: &e&lPunch&r and &e&lDamageresistance\n
-              &e&lPunch:&r While using left click you dash forward, consuming your food. You can dash until your food runs out, if it does you fall to the ground creating damage around the area. This also occurs while dashing torwards the ground.\n
-              &e&lDamageresistance:&r means no fall damage
+  abilityInfo: "
+                While hitting you use PUCH it makes you dash in cost for your food. When you fall on the ground after Punching you activate SLAM and create dmg aound that area.
+                Doomfist has two skills: PUNCH/SLAM and POTIONEFFECT 
+                Punch/Slam: allows aerosurfer to place glass blocks underneath its feet in order to be able to pseudo-fly whenever it is sneaking.
+                POTIONEFFECT: noFallDamage, so you dont take falldamage
               "
   skills:
     punch:

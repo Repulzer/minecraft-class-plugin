@@ -1,0 +1,28 @@
+Airwalker:
+  colouredName: "&7&lAirwalker"
+  description: "You can create platforms under him by sneak + jumping"
+  abilityInfo: "
+                &7&lAirwalker&r can create platforms under you by sneak + jumping&r\n
+                &7&l[Details]:&r\n
+                This class has two skills: &e&lWALKER&r and &e&lSNEAKINGPOTION\n
+                &e&lWalker:&r allows Airwalker to place glass blocks underneath its feet in order to be able to pseudo-fly whenever it is sneaking.\n
+                &e&lSneaking Potion:&r means while sneaking, gain speed 2
+              "
+  skills:
+    airwalker:
+      skill: WALKER
+      blocksToPlace:
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+      blocksToReplace:
+        - "AIR"
+        - "CAVE_AIR"
+        - "VOID_AIR"
+      isSneaking: true
+      blocksDrop: false
+      shouldRevert: true
+      revertsAfter: 10
+    speedWhenSneaking:
+      skill: SNEAKINGPOTION
+      type: SPEED
+      potency: 2

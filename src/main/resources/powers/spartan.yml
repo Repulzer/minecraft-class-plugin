@@ -1,7 +1,7 @@
 Spartan:
   colouredName: "&e&lSpartan"
   description: "Your shield cannot be cancelled."
-  heroInfo: "
+  abilityInfo: "
               &7&lSpartan&r spawns with an unbreakable shield and can shoot arrows by right clicking with them.&r\n
               &7&l[Details]:&r\n
               This class has two skills: &e&lShield&r and &e&lThrower&r\n

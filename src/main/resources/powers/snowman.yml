@@ -1,13 +1,7 @@
 Snowman:
   colouredName: "&f&lSnowman"
   description: "You create snow trails!"
-  heroInfo: "
-              &7&lSnowman&r Trace snow below you, throw snoball infinity\n
-              &7&l[Details]:&r\n
-              This class has two skills: &e&lWALKER&r and &e&lThrower\n
-              &e&lWalker:&r allows Snowman to place snow underneath its feet in.\n
-              &e&lThrower Potion:&r means you can throw snowballs infinity
-            "
+  abilityInfo: "abilityinfo text follows soon"
   skills:
     placeSnowBehindYou:
       skill: WALKER

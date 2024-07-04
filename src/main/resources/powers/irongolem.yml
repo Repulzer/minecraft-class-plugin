@@ -1,7 +1,7 @@
 IronGolem:
   colouredName: "&f&lIron Golem"
   description: "You're an iron golem"
-  heroInfo: ""
+  abilityInfo: "abilityinfo text follows soon"
   skills:
     ironFarm:
       skill: EGGLAYER

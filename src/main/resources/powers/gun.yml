@@ -1,7 +1,7 @@
 Gun:
   colouredName: "&8&lGun"
   description: "You have a gun."
-  heroInfo: ""
+  abilityInfo: "abilityinfo text follows soon"
   skills:
     gunItem:
       skill: GIVEITEM

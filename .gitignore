@@ -1,0 +1,17 @@
+# ignore BuildTools files
+BuildData/
+Bukkit/
+CraftBukkit/
+Spigot/
+work/
+BuildTools.jar
+BuildTools.log.txt
+spigot-1.16.4.jar
+spigot-1.16.5.jar
+# ignore builded files
+target/
+#other files
+.settings/
+.idea/
+.project
+.classpath

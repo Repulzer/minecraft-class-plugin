@@ -1,13 +1,7 @@
 Enderman:
   colouredName: "&5&lEnderman"
   description: "You can teleport by punching."
-  heroInfo: "
-              &7&lEnderman&r can teleport wherever you're looking by punching. You get additional enderpearls from killing endermen&r\n
-              &7&l[Details]:&r\n
-              This class has two skills: &e&lTeleport&r and &e&lOHKO\n
-              &e&lTeleport:&r allows Enderman to teleport every 10 seconds up to 30 blocks by right clicking.\n
-              &e&lOHKO:&r allows you to oneshoot endermans.
-            "
+  abilityInfo: "abilityinfo text follows soon"
   skills:
     teleport:
       skill: TELEPORT

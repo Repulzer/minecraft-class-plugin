@@ -1,9 +1,0 @@
-Pickpocket:
-  colouredName: "&e&lPickpocket"
-  description: "You can access other player's inventories by sneaking and right clicking"
-  heroInfo: ""
-  skills:
-    pickpocket:
-      skill: PICKPOCKET
-      range: 3
-      isSneaking: true

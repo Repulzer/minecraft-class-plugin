@@ -1,7 +1,7 @@
 Sorcerer:
   colouredName: "&5&lSorcerer"
   description: "You can create magical spell books and wield them using redstone"
-  heroInfo: "
+  abilityInfo: "
               &7&lSorcerer&r can create magical spell books and wield them using redstone\n
               &7&l[Details]:&r\n
               This class has one skill: &e&lCRAFTING&r\n

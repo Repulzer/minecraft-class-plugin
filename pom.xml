@@ -4,21 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.xemor</groupId>
-    <artifactId>Superheroes2</artifactId>
-    <version>2.0.1a</version>
+    <groupId>me.saltyy</groupId>
+    <artifactId>AbilityClasses</artifactId>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
 
-    <name>Superheroes2</name>
+    <name>AbilityClasses</name>
 
-    <description>Adds superheroes to your world - these can be customized completely and are extremely modular.
+    <description>Adds playerclasses to your world - these can be customized completely and are extremely modular.
     </description>
     <properties>
         <java.version>1.8</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <dir>D:\Holder\More Knockback Spigot Server\plugins</dir>
+        <dir>C:\Saltyy\dev\gitlab\minecraft-class-plugin\target</dir>
     </properties>
 
     <build>
@@ -42,11 +42,11 @@
                                 <relocation>
                                     <pattern>org.bstats</pattern>
                                     <!-- Replace this with your package! -->
-                                    <shadedPattern>me.xemor.superheroes2</shadedPattern>
+                                    <shadedPattern>me.saltyy.abilityclasses</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>io.papermc.lib</pattern>
-                                    <shadedPattern>me.xemor.superheroes2.paperlib</shadedPattern> <!-- Replace this -->
+                                    <shadedPattern>me.saltyy.abilityclasses.paperlib</shadedPattern> <!-- Replace this -->
                                 </relocation>
                             </relocations>
                         </configuration>
@@ -64,7 +64,7 @@
 
     <repositories>
         <repository>
-            <id>spigotmc-repo</id>
+            <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         <repository>
@@ -85,7 +85,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot</artifactId>
-            <version>1.16.4-R0.1-SNAPSHOT</version>
+            <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

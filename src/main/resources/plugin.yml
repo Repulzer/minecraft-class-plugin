@@ -1,29 +1,30 @@
-name: Superheroes2
+name: AbilityClasses
 version: ${project.version}
-main: me.xemor.superheroes2.Superheroes2
+main: me.saltyy.abilityclasses.AbilityClasses
 api-version: 1.16
-authors: [Xemor_]
-description: Adds superheroes to your world - these can be customized completely and are extremely modular.
+authors: [Saltyy]
+website: https://gitlab.com/Saltyy/minecraft-class-plugin
+description: Adds Classes with special Abilitys to your world - each class got their unique effects
 commands:
-  reroll:
-    description: Allows you to reroll someone's power
-    usage: /reroll <name>
-  hero:
-    description: Allows you to set your power
-    usage: /hero <hero> <name>
-  heroreload:
-    description: Allows you to reload the plugin
-    usage: /heroreload
-  heroinfo:
-      description: Gives you more information about a hero's skills with /heroinfo <ability>
-      usage: /heroinfo <ability>
+  abilityinfo:
+      description: Gives you more info about an ability with /abilityinfo <ability>
+      usage: /abilityinfo <ability>
+  abilityreroll:
+    description: Allows you to reroll someone's power with /abilityreroll <name>
+    usage: /abilityreroll <name>
+  ability:
+    description: Allows you to set your power with /ability <hero>
+    usage: /ability <hero> <name>
+  abilityconfigreload:
+    description: Allows you to reload the plugin configs
+    usage: /abilityconfigreload
 permissions:
-  superheroes.hero:
-    description: Allows them to use /power
+  playerclasses.ability:
+    description: Allows them to use /ability
     default: op
-  superheroes.reroll:
-    description: Allows them to use /reroll
+  playerclasses.abilityreroll:
+    description: Allows them to use /abilityreroll
     default: op
-  superheroes.heroinfo:
-    description: Allows them to use /heroinfo
+  playerclasses.abilityinfo:
+    description: Allows them to use /abilityinfo
     default: true
