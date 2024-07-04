@@ -1,114 +1,127 @@
-# Player RPG Classes 
-======
-A plugin for [Minecraft](https://minecraft.net/) servers, currently maintained by [Saltyy](https://www.saltyy.at).
-This plugin adds classes with special powers to Minecraft!
+# Player RPG Classes
 
-This Plugin was originally forked from [Xemor](https://github.com/Xemorr/superheroes)
-#### Index
-Build
+A plugin for [Minecraft](https://minecraft.net/) servers, currently maintained by [Saltyy](https://www.saltyy.at). This plugin adds classes with special powers to Minecraft!
 
-* [Building](#building)
-* [Bug Reporting](#bug-reporting)
-* [Contributing](#contributing)
-* [Code Requirements](#code-requirements)
-* [Plans](#plans)
+This Plugin was originally forked from [Xemor](https://github.com/Xemorr/superheroes).
 
+## Index
 
+- [Building](#building)
+- [Bug Reporting](#bug-reporting)
+- [Contributing](#contributing)
+- [Code Requirements](#code-requirements)
+- [Plans](#plans)
 
-Building
--------------
-There are some ways to Build the plugin. Here is my way:
-The development team is very open to both bug and feature requests / suggestions. You can submit these on the 
+## Building
+
+There are a few ways to build the plugin. Here is my preferred method:
+
 ### Buildtools
-1. `Download Buildtools`
 
-    Download Buildtools from [spigot](https://www.spigotmc.org/wiki/buildtools/).
+1. **Download Buildtools**
 
-2. `Move the Jar file`
+   Download Buildtools from [spigot](https://www.spigotmc.org/wiki/buildtools/).
 
-    Move the downloaded Buildtool.jar file into the plugins folder
+2. **Move the Jar file**
 
-3. `Build with BuildTools on 1.16.4 (with 1024Memory)`
-    run the following command to install it
+   Move the downloaded BuildTools.jar file into the plugins folder.
+
+3. **Build with BuildTools on 1.16.4 (with 1024MB Memory)**
+
+   Run the following command to install it:
+   ```bash
+   java -Xmx1024M -jar BuildTools.jar --rev 1.16.
+   
+   
+# Maven Setup and Contribution Guide
+
+## Download and Install Maven
+
+### Download Maven
+You can download Maven from the [official Maven website](https://maven.apache.org/download.cgi).
+
+### Install Maven on Your System
+The setup process for Maven varies based on the operating system you use.
+
+#### Windows
+1. Download and install Java.
+2. Download and install Maven.
+3. Set up environment variables in advanced settings:
+   - `JAVA_HOME`
+   - `MAVEN_HOME`
+   - Add both to the `PATH` variable.
+4. Check some tutorials for detailed steps.
+
+#### Linux
+1. Install Java and Maven via your package manager.
+2. Set environment variables in your shell configuration file (`.bashrc`, `.zshrc`, etc.).
+
+#### macOS
+1. Install Java and Maven via Homebrew:
+   ```bash
+   brew install java
+   brew install maven
     ```
-    java -Xmx1024M -jar BuildTools.jar --rev 1.16.4
-    ```
+2. Set environment variables in your shell configuration file (.bash_profile, .zshrc, etc.).
 
-### Maven
-1. `Download Maven`
+Change target path
 
-    Download Buildtools from [maven](https://maven.apache.org/download.cgi).
-    
-2. `Install Maven on your system`
-    Based on the System you use, maven setup is different
-    1. `Windows`
-        get java, get maven, setup variables in advanced settings (JAVA_HOME, MAVEN_HOME,....)
-        check some tutorial for that
+Change the path in the pom.xml file `(properties -> <dir>)`. That's the path where the built file will be saved.
 
-    2. `Linux`
-        
+# Maven Setup and Contribution Guide
 
-    3. `Shitty MacOS`
+## Change Target Path
 
-3. `change target path`
+Change the path in the `pom.xml` file (`properties` -> `<dir>`). That's the path where the built file will be saved.
 
-    change the Path in the pom.xml (properties -> <dir>). Thats the path where the builded file will be saved
+## Run Maven Build Command
 
-4. `Run the command and build maven in the defined path`
+To clean and package the project, run:
 
-    ```
-        mvn clean package
-    ```
+```bash
+mvn clean package
+```
 
+# Bug Reporting
 
-Bug Reporting
--------------
-The development is very open to both bug and feature requests / suggestions. You can submit these as Issues here.
+The development team is very open to both bug and feature requests/suggestions. You can submit these as [Issues](#) here.
 
+# Contributing
 
-Contributing
-------------
-Contributions of all sorts are welcome. To manage contributions, we use the merge request functionality of gitlab. In to gain access to gitlab and create a merge request, you will first need to perform the following steps:
+Contributions of all sorts are welcome. To manage contributions, we use the merge request functionality of GitLab. To gain access to GitLab and create a merge request, you will first need to perform the following steps:
 
-* Create an account on [gitlab](https://gitlab.com/).
+1. Create an account on [GitLab](https://gitlab.com/).
 
-Once you have performed these steps you can clone the project, push your code changes, and then submit it for review.
+Once you have performed these steps, you can clone the project, push your code changes, and then submit them for review.
 
-Requirement for compilation & usage is Java 8, or maybe even Java 11 but prefere to keep it at the same (11)
+# Code Requirements
 
+For the most part, CraftBukkit and Bukkit use the Sun/Oracle coding standards:
 
-Code Requirements
------------------
-* For the most part, CraftBukkit and Bukkit use the [Sun/Oracle coding standards](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html).
-* Use 4 spaces or define tab as so.
-    * Empty lines should contain no spaces.
-* No trailing whitespaces.
-* No 80 character column limit, or 'weird' mid-statement newlines unless absolutely necessary.
-    * The 80 character column limit still applies to documentation.
-* No one-line methods.
-* All major additions should have documentation.
-* Try to follow test driven development where available.
-* All code should be free of magic values. If this is not possible, it should be marked with a TODO comment indicating it should be addressed in the future.
-  * If magic values are absolutely necessary for your change, what those values represent should be documented in the code as well as an explanation in the Merge Request description on why those values are necessary.
-* No unnecessary code changes. Look through all your changes before you submit it.
-* Do not attempt to fix multiple problems with a single patch or merge request.
-* Avoid moving or renaming classes.
-* All non-private methods and constructors must have specified nullability through [annotations](https://github.com/JetBrains/java-annotations)
-* There needs to be a new line at the end of every file.
-* Imports should be organised in a logical manner.
-    * Do not group packages
-    * __Absolutely no wildcard imports outside of tests.__
+- Use 4 spaces or define tab as such.
+- Empty lines should contain no spaces.
+- No trailing whitespaces.
+- No 80 character column limit, or 'weird' mid-statement newlines unless absolutely necessary.
+  - The 80 character column limit still applies to documentation.
+- No one-line methods.
+- All major additions should have documentation.
+- Try to follow test-driven development where available.
+- All code should be free of magic values. If not possible, mark with TODO for future addressing.
+  - If magic values are necessary, document their meaning and necessity in the Merge Request.
+- Avoid unnecessary code changes.
+- Do not attempt to fix multiple problems with a single patch or merge request.
+- Avoid moving or renaming classes.
+- Specify nullability through annotations for all non-private methods and constructors.
+- Ensure a new line at the end of every file.
+- Organize imports logically; avoid grouping packages and wildcard imports outside of tests.
 
-Bukkit is a large project and what seems simple to a MR author at the time of writing may easily be overlooked by other authors and updates. 
-Including unit tests with your MR will help to ensure the MR can be easily maintained over time and encourage the Spigot team to merge the MR because less or no testing is needed.
-Any questions about these requirements can be asked via contact.
+Bukkit is a large project, and simple oversight at writing could be overlooked by other authors and updates. Unit tests included in your merge request ensure easy future maintenance, encouraging the Spigot team to merge the request with minimal or no testing. Questions about these requirements are welcome through contact.
 
+# Plans
 
-
-Plans
-- [x] change naming to "RPGClasses"
-- [ ] change ingame commands
-- [ ] add info command for classes
-- [ ] add permissions update
-- [ ] add new classes
-- [ ] ....
+- [x] Change naming to "RPGClasses"
+- [x] Change in-game commands
+- [x] Add info command for classes
+- [] Add permissions update
+- [] Add new classes
+- ...
