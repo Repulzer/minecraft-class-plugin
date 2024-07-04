@@ -1,0 +1,20 @@
+Invisible:
+  colouredName: "&7&lInvisible"
+  description: "You can Invisible."
+  abilityInfo: "
+                &7&lInvisible&r has one ability consisting of three parts: &e&lSNEAK&r, &e&lSNEAKINGPOTION&r, and &e&lDECOY&r.\n
+                When shifting an armourstand will spawn in the original place of the player, while the player will gain true invisibility and speed.
+              "
+  skills:
+    sneak:
+      skill: SNEAK #stops mobs from targeting the player while they are meeting the below conditions.
+      needsInvisibility: true
+      mustSneak: true
+    invisibility:
+      skill: SNEAKINGPOTION
+      type: INVISIBILITY
+      potency: 1
+    speed:
+      skill: SNEAKINGPOTION
+      type: SPEED
+      potency: 2

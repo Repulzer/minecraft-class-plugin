@@ -7,4 +7,4 @@ reroll:
   eachHeroRequiresPermissions: false
   cooldown: 1
 powerOnStart:
-  isEnabled: true
+  isEnabled: false

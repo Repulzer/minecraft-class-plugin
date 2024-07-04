@@ -1,0 +1,55 @@
+Light:
+  colouredName: "&7&lLight"
+  description: "You can create platforms under him by sneak + jumping"
+  abilityInfo: "
+                &7&lLight&r can create platforms under you by sneak + jumping&r and Punching causes you to strike lightning wherever you look.\n
+                &7&l[Details]:&r\n
+                This class has 3 skills: &e&lWALKER&r and &e&lSNEAKINGPOTION and lightning\n
+                &e&lWalker:&r allows Light to place glass blocks underneath its feet in order to be able to pseudo-fly whenever it is sneaking.\n
+                &e&lSneaking Potion:&r means while sneaking, gain speed 2
+              "
+  skills:
+    lightning:
+      skill: SUMMON
+      entity: LIGHTNING
+      range: 30
+      repel: true
+      cooldown: 10
+      type: SLOW_FALLING
+      potency: 1
+      duration: 5
+      mustSneak: true
+      action:
+        - "LEFT_CLICK_AIR"
+        - "LEFT_CLICK_BLOCK"
+      cooldownMessage: "&e&lZeus &fCooldown: %s seconds"
+    lightningImmunity:
+      skill: DAMAGERESISTANCE
+      damageMultiplier: 0
+      damageCause:
+        - "LIGHTNING"
+        
+    airwalker:
+      skill: WALKER
+      blocksToPlace:
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+      blocksToReplace:
+        - "AIR"
+        - "CAVE_AIR"
+        - "VOID_AIR"
+      isSneaking: true
+      blocksDrop: false
+      shouldRevert: true
+      revertsAfter: 10
+    speedWhenSneaking:
+      skill: SNEAKINGPOTION
+      type: SPEED
+      potency: 2
+
+    repulsion:
+      skill: REPULSION
+      multiplier: 0.01 #set this to a negative number to attract.
+      range: 5
+      entityBlacklist:
+        - "ARMOR_STAND"

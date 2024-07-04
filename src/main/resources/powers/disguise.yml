@@ -18,10 +18,10 @@ Disguise:
       skill: SNEAKINGPOTION
       type: SPEED
       potency: 2
-    decoy:
-      skill: DECOY
+    fakeplayer:
+      skill: FAKEPLAYER
       color: #color of the leather armor
-        red: 255
+        red: 0
         green: 0
-        blue: 255
+        blue: 0
       base64Skin: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjQ0ZDM4ZWZjNmFmMGNkNTQ5NGFiNmMzZWYxZDNlYTZlODRiMWZhZTIxNGNlMTRhZmMxMzQ4NzFlMWM4MWM1In19fQ==

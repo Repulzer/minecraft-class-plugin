@@ -1,0 +1,23 @@
+Chicken:
+  colouredName: "&e&lChicken"
+  description: "You're a chicken."
+  abilityInfo: "
+                This hero is mostly a joke, but its Speed II shouldn't be underestimated.\n
+                &7&lChicken&r has two skills: &e&lEGGLAYER&r and &e&lPOTIONEFFECT&r\n
+                &e&lPotion Effect:&r slowfalling potion effect and speed 2. \n
+                &e&lEgglayer:&r lays eggs every 15 seconds.
+              "
+  skills:
+    eggLayer:
+      skill: EGGLAYER
+      type: EGG
+      quantity: 1
+      delay: 15
+    speed:
+      skill: POTIONEFFECT
+      type: SPEED
+      potency: 2
+    slowfall:
+      skill: POTIONEFFECT
+      type: SLOW_FALLING
+      potency: 1
